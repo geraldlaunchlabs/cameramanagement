@@ -25,6 +25,7 @@
 }
 
 - (IBAction)showCamera:(id)sender {
+    imagePicker = [[UIImagePickerController alloc]init];
     if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
         imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
     } else {
